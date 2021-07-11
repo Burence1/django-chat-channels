@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # apps
+    'channels',
     'chat',
 ]
 
@@ -53,6 +54,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'djangochat.urls'
+ASGI_APPLICATION = "djangochat.asgi.application"
 
 TEMPLATES = [
     {
@@ -70,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'djangochat.wsgi.application'
+# WSGI_APPLICATION = 'djangochat.wsgi.application'
 
 
 # Database
